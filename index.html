@@ -81,6 +81,47 @@ header p{font-size:1.1em;opacity:.85;}
 
 .leaflet-div-icon{background:none!important;border:none!important;}
 
+/* ===== 手机适配 ===== */
+@media(max-width:768px){
+  .container{padding:10px;}
+  header{padding:25px 15px;border-radius:15px;}
+  header h1{font-size:1.4em;}
+  header p{font-size:.85em;}
+  .overview-nav{padding:15px;}
+  .overview-grid{grid-template-columns:repeat(2,1fr);gap:8px;}
+  .overview-card{padding:10px 12px;}
+  .overview-card .day-num{font-size:1.1em;}
+  .overview-card .day-label{font-size:.75em;}
+  .overview-card .day-loc{font-size:.7em;}
+  .flight-bar{flex-direction:column;gap:10px;}
+  .flight-card{padding:12px;min-width:0;}
+  .warning-bar{font-size:.8em;padding:12px 15px;}
+  .day-section{padding:15px;border-radius:15px;margin-bottom:15px;}
+  .day-section .day-badge{width:34px;height:34px;font-size:.9em;}
+  .day-section .day-title{font-size:1em;}
+  .day-section .day-date{font-size:.75em;}
+  .day-section .hotel-tag{font-size:.7em;}
+  .day-content{flex-direction:column;gap:15px;}
+  .day-right{min-width:0;}
+  .day-left{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .schedule-table{font-size:.7em;min-width:650px;}
+  .schedule-table th{padding:6px 4px;font-size:.7em;}
+  .schedule-table td{padding:6px 4px;}
+  .time-badge{font-size:.7em;padding:1px 5px;}
+  .transport-badge{font-size:.68em;padding:1px 5px;}
+  .cost-cell{font-size:.7em;}
+  .daily-total{font-size:.75em;padding:10px 14px;flex-direction:column;align-items:flex-start;}
+  .daily-total .total-amount{font-size:.9em;}
+  .leaflet-map{height:300px;}
+  .route-map-panel h3{font-size:.85em;padding:10px 12px 8px;}
+  .grand-total{padding:15px;}
+  .grand-total h2{font-size:1em;}
+  .grand-total table{font-size:.75em;}
+  .grand-total .total-row{font-size:1em;}
+  .back-top{width:36px;height:36px;bottom:20px;right:20px;font-size:1em;}
+  .day-alert,.day-info{font-size:.75em;padding:10px 14px;}
+}
+
 @media print{body{background:white;}.day-section{box-shadow:none;break-inside:avoid;}.back-top,.overview-nav{display:none;}.leaflet-map{display:none;}}
 </style>
 </head>
